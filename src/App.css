@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.tasks-container {
+  display: flex;
+  background-color: #131213;
+  height: 120vh;
+  padding-bottom: 20px;
+}
+@media (max-width: 576px) {
+  .tasks-container {
+    flex-direction: column;
+  }
+}
+.task-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: #1a171d;
+}
+.task-creation-heading {
+  color: #f3aa4e;
+  font-family: 'Roboto';
+  font-size: 35px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.task-label {
+  font-family: 'Roboto';
+  color: white;
+  font-size: 16px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.inp {
+  height: 35px;
+  width: 280px;
+  outline: none;
+}
+.add {
+  height: 35px;
+  width: 100px;
+  margin: 25px;
+  align-self: center;
+  background-color: #f3aa4e;
+  color: white;
+  font-family: 'Roboto';
+  border-width: 0px;
+  cursor: pointer;
+}
+.task-display-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  width: 70%;
+}
+.tags-heading {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 500;
+}
+.tag-list-btn-con {
+  display: flex;
+  padding-left: 0px;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.btn-ul {
+  border: 2px solid #f3aa4e;
+  cursor: pointer;
+  border-radius: 18px;
+  background-color: transparent;
+  color: white;
+  margin: 5px;
+  padding: 15px;
+}
+.active {
+  background-color: #f3aa4e;
+  color: black;
+}
+.tasks-display-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.no-tasks {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 25px;
+  padding-top: 30px;
+}
+.task-ul-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 500px;
+}
